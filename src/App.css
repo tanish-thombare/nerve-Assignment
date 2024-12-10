@@ -1,0 +1,141 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+
+h1 {
+  margin-top: 20px;
+  font-size: 2.5rem;
+  color: #444;
+}
+
+p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #000000;
+}
+
+/* Toggle Component */
+.toggle {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  gap: 10px;
+}
+
+.toggle button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #0056d6;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle button:hover {
+  background-color: #003e9f;
+}
+
+.toggle button:active {
+  background-color: #002e79;
+}
+
+.toggle button.active {
+  background-color: #28a745;
+}
+
+/* Dropdown Component */
+select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #918f8f;
+  border-radius: 5px;
+  outline: none;
+  margin: 10px auto;
+  display: inline-block;
+  width: 250px;
+  background-color: #c5b4b4;
+  transition: border-color 0.3s ease;
+}
+
+select:hover {
+  border-color: #0056d6;
+}
+
+/* Cards Component */
+.cards {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+  gap: 15px;
+
+}
+
+.card {
+  background-color: #fff;
+  border: 2px solid #918f8f;
+  border-radius: 10px;
+  padding: 15px;
+  width: 200px;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  color: #0056d6;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Empty State */
+.empty-state {
+  margin-top: 50px;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.empty-state p {
+  font-weight: bold;
+  color: #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .toggle {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  select {
+    width: 90%;
+  }
+}
